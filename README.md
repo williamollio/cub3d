@@ -21,6 +21,8 @@ Movements
 * <strong>Mouse</strong>: look left and right.
 
 # Clone
+The mlx library included works only on MacOS.
+
 Open a terminal and run following command:
 ```
 git clone <repository url>
