@@ -6,7 +6,7 @@
 Developed by Id Software by the über famous John Carmack and John Romero, pub- lished in 1992 by Apogee Software, [Wolfenstein 3D](http://users.atw.hu/wolf3d/) is the first true “First Person Shooter” in the history of video games.
 This project introduced the notion of [Raycasting](https://en.wikipedia.org/wiki/Ray_casting)
 
-[Subject PDF]
+[Subject PDF](https://github.com/williamollio/cub3d/blob/master/subject/cub3D.pdf)
 # Goal
 Create a “realistic” 3D graphical representation of the inside of a maze from a first-person perspective. The representation has to be created using the Ray-Casting principles.
 
@@ -36,4 +36,4 @@ To start run the following command (the last argument is optionnal):
 ./cub3D ./maps/maps_choosed.cub
 ```
 
-For further informations about the content of the map, read the [Subject PDF]
+For further informations about the content of the map, read the [Subject PDF](https://github.com/williamollio/cub3d/blob/master/subject/cub3D.pdf)
