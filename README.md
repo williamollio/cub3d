@@ -35,5 +35,6 @@ To start run the following command (the last argument is optionnal):
 ```
 ./cub3D ./maps/maps_choosed.cub
 ```
+Press ESC to exit the game since your mouse will be capture by the game.
 
 For further informations about the content of the map, read the [Subject PDF](https://github.com/williamollio/cub3d/blob/master/subject/cub3D.pdf)
