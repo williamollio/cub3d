@@ -1,4 +1,4 @@
-# CUB3d
+# CUB3D
 
 
 <strong>Overview</strong>

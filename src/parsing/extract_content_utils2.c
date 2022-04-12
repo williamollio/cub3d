@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:48:13 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/06 18:18:03 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/12 14:03:05 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,20 @@ void	fill_path(char **path, char *read)
 		i++;
 	if (read[i] != '\0')
 		*path = ft_strdup(&read[i]);
+}
+
+static void	check_rgb(char **arr)
+{
+	int	i;
+
+	i = 0;
+	while (i < 3)
+	{
+		if (ft_atoi(arr[i]) < 0 || ft_atoi(arr[i]) > 255)
+			error("error : rgb invalid");
+		i++;
+	}
+	return ;
 }
 
 void	fill_rgb(long *color, char *read)
@@ -41,6 +55,7 @@ void	fill_rgb(long *color, char *read)
 		ft_memfreeall((void **)arr);
 		return ;
 	}
+	check_rgb(arr);
 	*color = (65536 * ft_atoi(arr[0])) + (256 * ft_atoi(arr[1]))
 		+ ft_atoi(arr[2]);
 	ft_memfreeall((void **)arr);

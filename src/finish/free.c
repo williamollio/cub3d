@@ -6,15 +6,15 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:18:49 by agunczer          #+#    #+#             */
-/*   Updated: 2022/04/06 18:25:53 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/12 13:53:31 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/cub.h"
 
-void free_list_t_map(t_map *node)
+void	free_list_t_map(t_map *node)
 {
-	t_map *tmp;
+	t_map	*tmp;
 
 	while (node)
 	{
@@ -24,9 +24,9 @@ void free_list_t_map(t_map *node)
 	}
 }
 
-void free_list(t_map_data *node)
+void	free_list(t_map_data *node)
 {
-	t_map_data *tmp;
+	t_map_data	*tmp;
 
 	while (node)
 	{

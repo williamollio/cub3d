@@ -6,7 +6,7 @@
 /*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:07:34 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/06 18:35:50 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/12 14:02:53 by wollio           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,21 @@
 
 int	identifier(t_vars *data, char *read)
 {
-	if (read[0] == 'N' && read[1] == 'O' && read[2] == ' ' && !data->north)
+	if (read[0] == 'N' && read[1] == 'O' && read[2] == ' '
+		&& data->north == NULL)
 		fill_path(&data->north, &read[2]);
-	else if (read[0] == 'S' && read[1] == 'O' && read[2] == ' ' && !data->south)
+	else if (read[0] == 'S' && read[1] == 'O' && read[2] == ' '
+		&& data->south == NULL)
 		fill_path(&data->south, &read[2]);
-	else if (read[0] == 'W' && read[1] == 'E' && read[2] == ' ' && !data->west)
+	else if (read[0] == 'W' && read[1] == 'E' && read[2] == ' '
+		&& data->west == NULL)
 		fill_path(&data->west, &read[2]);
-	else if (read[0] == 'E' && read[1] == 'A' && read[2] == ' ' && !data->east)
+	else if (read[0] == 'E' && read[1] == 'A' && read[2] == ' '
+		&& data->east == NULL)
 		fill_path(&data->east, &read[2]);
-	else if (read[0] == 'F' && read[1] == ' ' && data->floorcode == 0)
+	else if (read[0] == 'F' && read[1] == ' ' && data->floorcode == -1)
 		fill_rgb(&data->floorcode, &read[1]);
-	else if (read[0] == 'C' && read[1] == ' ' && data->ceillingcode == 0)
+	else if (read[0] == 'C' && read[1] == ' ' && data->ceillingcode == -1)
 		fill_rgb(&data->ceillingcode, &read[1]);
 	else
 		return (1);
