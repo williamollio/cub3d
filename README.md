@@ -22,6 +22,7 @@ Movements
 
 # Clone
 The mlx library included works only on MacOS.
+Project tested on macOS Catalina.
 
 Open a terminal and run following command:
 ```
