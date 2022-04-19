@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   extract_content_utils.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wiliamollio <wiliamollio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:07:45 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/06 17:25:32 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/19 11:31:38 by wiliamollio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	init_location(t_vars *data)
 {
+	data->t_map = NULL;
 	data->win_width = WIDTH;
 	data->win_height = HEIGHT;
 	data->floorcode = -1;

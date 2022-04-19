@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wiliamollio <wiliamollio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/22 08:22:03 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/05 19:32:36 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/19 11:22:21 by wiliamollio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	check_overlap(char *dst, const char *src, size_t len)
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	size_t	i;
-
+	(void)i;
 	i = 0;
 	if (!dst && !src)
 		return (NULL);

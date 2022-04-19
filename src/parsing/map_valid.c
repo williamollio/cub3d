@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_valid.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wiliamollio <wiliamollio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 18:48:19 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/05 18:49:13 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/19 11:28:12 by wiliamollio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,9 @@ int	check_surrounded(t_map *node, t_vars *data)
 
 bool	map_valid_body(t_vars *data, t_map *node, int *n_col, bool *player_set)
 {
+	// printf("node->o %c\n", node->o);
+	// printf("node->x %f\n", node->x);
+	// printf("node->y %f\n", node->y);
 	if (node->o == '0' && node->x > get_length_previous_line(node))
 		return (false);
 	if (is_space_tab(node->o) && check_surrounded(node, data))
