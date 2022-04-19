@@ -1,7 +1,7 @@
 # CUB3D
 
 <p align="center">
-![cub3D](https://github.com/williamollio/cub3d/blob/master/cub3d.gif)
+	<img src="https://github.com/williamollio/cub3d/blob/master/cub3d.gif"/>
 </p>
 <br/>
 <strong>Overview</strong>
