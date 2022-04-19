@@ -4,7 +4,8 @@
 	<img src="https://github.com/williamollio/cub3d/blob/master/cub3d.gif"/>
 </p>
 <br/>
-<strong>Overview</strong>
+
+# Overview
 
 Developed by Id Software by the über famous John Carmack and John Romero, pub- lished in 1992 by Apogee Software, [Wolfenstein 3D](http://users.atw.hu/wolf3d/) is the first true “First Person Shooter” in the history of video games.
 This project introduced the notion of [Raycasting](https://en.wikipedia.org/wiki/Ray_casting)
