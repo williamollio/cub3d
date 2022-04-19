@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   movement.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wiliamollio <wiliamollio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:19:27 by agunczer          #+#    #+#             */
-/*   Updated: 2022/04/06 12:02:52 by agunczer         ###   ########.fr       */
+/*   Updated: 2022/04/19 12:04:54 by wiliamollio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,21 +40,6 @@ void	leftward_rotation(t_vars *vars)
 		+ vars->calc->plane_y * cos(-vars->calc->rot_speed);
 }
 
-static void	mouse_rotation(t_vars *vars)
-{
-	static double	prev_x = 0;
-	int				x;
-	int				y;
-
-	mlx_mouse_get_pos(vars->win, &x, &y);
-	mlx_mouse_move(vars->win, vars->win_width / 2, vars->win_height / 2);
-	if (prev_x > vars->win_width / 2)
-		leftward_rotation(vars);
-	else if (prev_x < vars->win_width / 2)
-		rightward_rotation(vars);
-	prev_x = x;
-}
-
 static void	walk(t_vars *vars)
 {
 	if (vars->key->downflag == true)
@@ -69,7 +54,6 @@ static void	walk(t_vars *vars)
 
 void	movement(t_vars *vars)
 {
-	mouse_rotation(vars);
 	walk(vars);
 	if (vars->key->arrowrightflag == true)
 		rightward_rotation(vars);

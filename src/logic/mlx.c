@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mlx.c                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: wollio <wollio@student.42.fr>              +#+  +:+       +#+        */
+/*   By: wiliamollio <wiliamollio@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/05 19:36:39 by wollio            #+#    #+#             */
-/*   Updated: 2022/04/06 13:48:57 by wollio           ###   ########.fr       */
+/*   Updated: 2022/04/19 12:01:16 by wiliamollio      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,6 @@ void	initdatastructure(t_vars *data)
 
 void	game_start(t_vars *data)
 {
-	mlx_mouse_hide(data);
-	mlx_mouse_move(data->win, data->win_width / 2, data->win_height / 2);
 	mlx_do_key_autorepeatoff(data->mlx);
 	mlx_hook(data->win, 17, (1L << 17), closewindow, &data);
 	mlx_hook(data->win, 2, (1L << 0), &setkeyflagtrue, data);
